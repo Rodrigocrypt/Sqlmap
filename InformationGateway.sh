@@ -39,10 +39,11 @@ echo "***** Digite a Url do Site:  ************************"
 echo "*****************************************************"
 echo ""
 read USITEX
-sqlmap --tor --tor-type=SOCKS5 -u $USITEX
+sqlmap --tor --tor-type=SOCKS5 -u "$USITEX" --check-tor --time-sec 10 --random-agent
 echo ""
 echo ""
 echo ""
+sleep 5
 read -p "Aperte para Analisar um novo Site"
 
 done
