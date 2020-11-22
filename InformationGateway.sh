@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# /root/.sqlmap/output/ CAMINHO ONDE SAO SALVOS POR PADRAO AS ANALISES DAR UM CP PARA UM DIRETORIO DE FACIL ACESSO
+
 clear
 
 echo "********************************************************"
@@ -7,36 +10,40 @@ echo "********************************************************"
 echo "********************************************************"
 echo "**** Script de Verificacao de sites Vulns a SQL ********"
 echo "********************************************************"
-echo "*****              Anon_X95                       ******"
+echo "*****               Anon_X95                      ******"
 echo "********************************************************"
 echo ""
+read -p "Aperte para Iniciar"
+service tor start
+echo ""
+clear
+echo "********************************************************"
+echo "***            SERVICO TOR FOI INICIADO              ***"
+echo "********************************************************"
+echo ""
+read -p "Aperte para ver se o TOR esta Ativo"
+clear
+service tor status
+echo ""
+echo ""
+echo ""
 read -p "Aperte para Prosseguir"
-
 clear
 
-while true
-do
-
+for i in {1..5000}
+	do
 clear
 echo ""
-echo "******************************************************"
-echo "******         Selecione uma Opcao               *****"
-echo "******************************************************"
-echo "***** 1. Sqlmap (Menos Seguro)                   *****"
-echo "***** 2. Sqlmap + Tor (Mais Seguro)              *****"
-echo "***** 3. TESTE                                   *****"
-echo "******************************************************"
-echo "********             Anon_X95            *************"
-echo "******************************************************"
-read n
+echo "*****************************************************"
+echo "***** Digite a Url do Site:  ************************"
+echo "*****************************************************"
 echo ""
-case $n in
-
-1) clear
-echo "Informe a Url do Site:"
 read USITEX
-(xterm -title "SQLMAP" -e sqlmap -u $USITEX --dbs ) &
+sqlmap --tor --tor-type=SOCKS5 -u $USITEX
+echo ""
+echo ""
+echo ""
+read -p "Aperte para Analisar um novo Site"
 
-esac
 done
 
