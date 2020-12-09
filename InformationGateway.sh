@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# /root/.sqlmap/output/ CAMINHO ONDE SAO SALVOS POR PADRAO AS ANALISES DAR UM CP PARA UM DIRETORIO DE FACIL ACESSO
-
 clear
 
 echo "********************************************************"
