@@ -15,3 +15,6 @@ WsPages.php?ID=noticiasDetalle.php?xid=
 
 essas sao algumas mas pode se conseguir muito mais basta pesquisar no Google.
 como ele foi desenvolvido pra ser seguro ele utiliza do TOR que e uma ferramenta para anonimato.
+
+Lembre-se para o bom funcionamento do Script para iniciar primeiro o Instalar.sh ele vai instalar o TOR caso nao tenha Instalado
+e logo em Seguida o InformationGateway.Sh.
