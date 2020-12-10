@@ -18,3 +18,5 @@ como ele foi desenvolvido pra ser seguro ele utiliza do TOR que e uma ferramenta
 
 Lembre-se para o bom funcionamento do Script para iniciar primeiro o Instalar.sh ele vai instalar o TOR caso nao tenha Instalado
 e logo em Seguida o InformationGateway.Sh.
+
+E importante deixar um shell Aberto com o TOR rodando, isso para não ocorrer erros durante o processo.
